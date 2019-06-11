@@ -9,7 +9,7 @@ function About() {
     <div>
       <Hero backgroundImage="https://pixel.nymag.com/imgs/daily/intelligencer/2014/04/11/11-bookstores-6-three-lives-2.w700.h467.2x.jpg">
         <h1>Google Book Store</h1>
-        <h2>They're the Good Boys and Girls</h2>
+        <h2>New Place for Hangout!</h2>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
@@ -21,11 +21,13 @@ function About() {
           <Col size="md-12">
             <p>
             The Google Bookstore is UO Bootcamp largest used and new book and record store. Currently in our third incarnation, 
-            we began in 2019 in a downtown Portland loft.That’s when owner Arunav Gupta took his decade of experience selling 
+            we began in 2019 in a downtown Portland loft.That’s when owner <i>Arunav Gupta </i>took his decade of experience selling 
             everything from cars to clothes online and focused instead on his first love: books. 
-            During the revitalization of downtown Portland, we grew quickly to our current 22,000 sq. ft. space .
-            The name was chosen with irony, but seems more appropriate with each passing day as physical bookstores die out like dinosaurs
-            from the meteoric impact of Amazon and e-books. We continue to BUY, SELL, and TRADE like we have from day one.
+            During the revitalization of downtown Portland, we grew quickly to our current 22,000 sq. ft. space.
+            The name was chosen with irony, but seems more appropriate with each passing day as physical bookstores die out like dinosaurs from the meteoric impact of Amazon and e-books. We continue to BUY, SELL, and TRADE like we have from day one.
+           </p>
+
+            <p>
             In addition to over 250,000 NEW and USED books on two floors, including our new Arts & Rare Book Annex, our shared space includes tens of thousands of VINYL RECORDS and GRAPHIC NOVELS, 
             a huge mezzanine level that includes the Labyrinth Above the Last Bookstore, Gather Yarn Shop, and the Spring Arts Collective gallery shops.
             Truly something for everyone. Somehow we became one of the largest independent bookstores in the world still standing.

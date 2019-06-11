@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Container from "../components/Container";
-import SearchForm from "../components/SearchForm";
 import SavedResults from "../components/SavedResults";
-import Alert from "../components/Alert";
 
 class Saved extends Component {
   state = {
