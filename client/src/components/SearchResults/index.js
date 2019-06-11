@@ -42,7 +42,7 @@ function SearchResults (props){
           className="img-fluid rounded float-left mr-2" />
           </a>
 
-         <p > <strong><i>{result.volumeInfo.title} By 
+         <p > <strong><i>{result.volumeInfo.title} 
              {result.volumeInfo.authors}  </i> </strong></p>
           <p>{result.volumeInfo.description}</p>
         </li>

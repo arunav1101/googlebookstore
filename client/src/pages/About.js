@@ -20,7 +20,7 @@ function About() {
         <Row>
           <Col size="md-12">
             <p>
-            The Last Bookstore is Bootcamp largest used and new book and record store. Currently in our third incarnation, 
+            The Google Bookstore is UO Bootcamp largest used and new book and record store. Currently in our third incarnation, 
             we began in 2019 in a downtown Portland loft.That’s when owner Arunav Gupta took his decade of experience selling 
             everything from cars to clothes online and focused instead on his first love: books. 
             During the revitalization of downtown Portland, we grew quickly to our current 22,000 sq. ft. space .
