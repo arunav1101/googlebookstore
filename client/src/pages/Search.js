@@ -41,23 +41,7 @@ class Search extends Component {
       })
         .catch(err => console.log(err));
     }
-
-    console.log('SaveBookevent',author,synopsis,title)
   }
-
-  // handleFormSubmit = event => {
-  //   event.preventDefault();
-  //   if (this.state.title && this.state.author) {
-  //     API.saveBook({
-  //       title: this.state.title,
-  //       author: this.state.author,
-  //       synopsis: this.state.synopsis
-  //     })
-  //       .then(res => this.loadBooks())
-  //       .catch(err => console.log(err));
-  //   }
-  // };
-
 
   render() {
     return (
