@@ -7,6 +7,7 @@ import SearchResults from "../components/SearchResults";
 class Search extends Component {
   state = {
     search: "",
+    saveValue: false,
     results: [],
     error: ""
   };
@@ -28,6 +29,8 @@ class Search extends Component {
   };
 
   saveBook=({target}) => {  
+    this.setState({
+      saveValue:!this.state.saveValue})
     const{author,synopsis,title,view,info,buy,img} =target.dataset;
     if (title && author) {
       API.saveBook({
@@ -44,6 +47,7 @@ class Search extends Component {
   }
 
   render() {
+    console.log('this.saveBtn',this.state.saveValue)
     return (
       <div>
         <Container style={{ minHeight: "80%" }}>
@@ -54,6 +58,7 @@ class Search extends Component {
           />
           <SearchResults results={this.state.results} 
           handleSaveBook={this.saveBook}
+          saveBtnValue={this.state.saveValue}
           />
         </Container>
       </div>

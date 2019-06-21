@@ -3,7 +3,7 @@ import "./style.css";
 
 function SearchResults (props){
 const noImage="https://blog.springshare.com/wp-content/uploads/2010/02/nc-md.gif";
-  return (
+return (
     <div className="box container">
    
     <ul className="list-group search-results">
@@ -18,6 +18,7 @@ const noImage="https://blog.springshare.com/wp-content/uploads/2010/02/nc-md.gif
         </a>
 
         <button type="submit" 
+        disabled={props.saveBtnValue}
         onClick={props.handleSaveBook}
         className="btn btn-info mr-2 float-right"
         data-author={result.volumeInfo.authors || "Anonymous"  }
