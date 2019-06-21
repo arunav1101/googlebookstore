@@ -7,7 +7,6 @@ import SearchResults from "../components/SearchResults";
 class Search extends Component {
   state = {
     search: "",
-    saveValue: false,
     results: [],
     error: ""
   };
@@ -28,10 +27,9 @@ class Search extends Component {
       .catch(err => this.setState({ error: err.message }));
   };
 
-  saveBook=({target}) => {  
-    this.setState({
-      saveValue:!this.state.saveValue})
-    const{author,synopsis,title,view,info,buy,img} =target.dataset;
+  saveBook=({author,synopsis,title,view,info,buy,img}) => {  
+    // const{} =target.dataset;
+
     if (title && author) {
       API.saveBook({
         title,
@@ -45,9 +43,7 @@ class Search extends Component {
         .catch(err => console.log(err));
     }
   }
-
   render() {
-    console.log('this.saveBtn',this.state.saveValue)
     return (
       <div>
         <Container style={{ minHeight: "80%" }}>
@@ -56,10 +52,16 @@ class Search extends Component {
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
           />
-          <SearchResults results={this.state.results} 
+       <div className="box container">
+       <ul className="list-group search-results">
+        {this.state.results.map(result => ( 
+          <SearchResults key={result.id} result={result} 
           handleSaveBook={this.saveBook}
-          saveBtnValue={this.state.saveValue}
           />
+        ))}
+          </ul>
+          </div>
+
         </Container>
       </div>
     );

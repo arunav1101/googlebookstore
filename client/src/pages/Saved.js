@@ -36,7 +36,9 @@ const {dataset} =target;
         <Container style={{ minHeight: "80%" }}>
         {this.state.books.length ? (
           <SavedResults results={this.state.books} 
-          handleDelete={this.deleteBook}
+          handleDelete={this.deleteBook
+          
+          }
           />
         ):(
           <h3>No Results to Display</h3>
